@@ -23,23 +23,20 @@ $f3->route('GET /', function() {
 
 //define an order route
 $f3->route('GET /order', function () {
-    echo "Tester";
-    //$view = new Template();
-    //echo $view->render('views/order.html');
+    $view = new Template();
+    echo $view->render('views/order.html');
 });
 
 //define an order 2  route
 $f3->route('GET /order2', function () {
-    echo "Tester";
-    //$view = new Template();
-    //echo $view->render('views/order2.html');
+    $view = new Template();
+    echo $view->render('views/order2.html');
 });
 
 //define a summary  route
 $f3->route('GET /summary', function () {
-    echo "Tester";
-    //$view = new Template();
-    //echo $view->render('views/summary.html');
+    $view = new Template();
+    echo $view->render('views/summary.html');
 });
 
 //run fat free

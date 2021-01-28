@@ -1,6 +1,7 @@
 <?php
 
 //This is my CONTROLLER
+/** Create a food order form */
 
 //Turn on error reporting
 ini_set('display_errors', 1);
@@ -20,18 +21,25 @@ $f3->route('GET /', function() {
     echo $view->render('views/home.html');
 });
 
-//define a breakfast route
-$f3->route('GET /breakfast', function () {
-    //echo "breakfast";
-    $view = new Template();
-    echo $view->render('views/breakfast.html');
+//define an order route
+$f3->route('GET /order', function () {
+    echo "Tester";
+    //$view = new Template();
+    //echo $view->render('views/order.html');
 });
 
-//define a lunch/sandwich route
-$f3->route('GET /lunch/sandwich', function () {
-    //echo "Test";
-    $view = new Template();
-    echo $view->render('views/sandwich.html');
+//define an order 2  route
+$f3->route('GET /order2', function () {
+    echo "Tester";
+    //$view = new Template();
+    //echo $view->render('views/order2.html');
+});
+
+//define a summary  route
+$f3->route('GET /summary', function () {
+    echo "Tester";
+    //$view = new Template();
+    //echo $view->render('views/summary.html');
 });
 
 //run fat free
